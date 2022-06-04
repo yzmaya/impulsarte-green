@@ -33,9 +33,9 @@ const firebaseConfig = {
   appId: "1:1543366665:web:7a65cc8687f3388584b0d8"
 };
 var userID = localStorage.getItem("UserID");
-var username = localStorage.getItem("UserName");
+//var username = localStorage.getItem("UserName");
 var mail = localStorage.getItem("UserMail");
-console.log("users/"+userID)
+//console.log("users/"+userID)
 var holas = "/users/"+userID+"/tareas";
 var nyzmaya = "/users/P2ry8hu4kafUbPb6UAnibTP89Ck2/tareas";
 var sgarcia = "/users/iAZytm5WjMVZgS3z2mZqMBLyw4R2/tareas";
@@ -53,7 +53,7 @@ var hvivanco = "/users/GYNUsSsb46hOcKxmK1NmE4hZ6P92/tareas"
 
 
 var hola = "/users";
-console.log(username)
+//console.log(username)
 document.getElementById('nombre').innerHTML = mail;
 
 

@@ -8,9 +8,12 @@ firebase.auth().onAuthStateChanged(function(user) {
       console.log('usuario autentificado');
         var usuario = user.uid;
         var correo = user.email;
-      localStorage.setItem("UserID", usuario);
-      localStorage.setItem("UserMail", correo);
-      window.location.href = 'home.html';
+    //  localStorage.setItem("UserID", usuario);
+      //localStorage.setItem("UserMail", correo);
+    //  window.location.href = 'home.html';
+    console.log(usuario)
+    console.log(correo)
+    location.href ="home.html"
   
       if(user != null){
   
@@ -23,6 +26,10 @@ firebase.auth().onAuthStateChanged(function(user) {
   
     }
   });
+
+  function logout(){
+    firebase.auth().signOut();
+  }
   
   function login(){
   
